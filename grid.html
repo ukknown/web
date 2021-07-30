@@ -1,0 +1,23 @@
+<html lang="en"dir="1tr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      #grid{
+        border:5px solid pink;
+        display:grid;/*display에 grid를 사*/
+        grid-template-columns:150px 1fr;/*하나의 칼럼을 배치, 첫번째 칼럼은 150px 두번째 칼럼은 나머지 공간 다 사용(1fr) 똑같은 공간 사용 1fr 1fr*/
+      }
+      div{
+        border:5px solid gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="grid">
+    <!--div태그 디자인을 위해서 작성하는 태그-->
+    <div>NAVIGATION</div>
+    <div>ARTICLE</div>
+    </div>
+  </body>
+</html>
