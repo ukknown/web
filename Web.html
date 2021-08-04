@@ -62,23 +62,26 @@
       i = i + 1;
     }
 
-    function BodySetBackgroundColor(color){ document.querySelector('body').style.backgroundColor = color; }
+  function BodySetBackgroundColor(color){
+    document.querySelector('body').style.backgroundColor = color;
+  }
 
-    function BodySetColor(color){ document.querySelector('body').style.color = color; }
+  function BodySetColor(color){
+    document.querySelector('body').style.color = color;
+  }
 
-
-  </script>
-  <script>
-  function nightDayHandler(self)
-  {
-    var target = document.querySelector('body'); if(self.value === 'night'){
-       BodySetBackgroundColor('black');  BodySetColor('white');
-      self.value = 'day';
+  function nightDayHandler(self){
+    var target = document.querySelector('body');
+    if(self.value === 'night'){
+       target.BodySetBackgroundColor('black');
+       target.BodySetColor('white');
+       self.value = 'day';
 
       LinksSetColor('blue');
     }
   } else {
-     BodySetBackgroundColor('white');  BodySetColor('white');
+     target.BodySetBackgroundColor('white');
+     target.BodySetColor('white');
     self.value = 'night';
 
     LinksSetColor('blue');
@@ -86,8 +89,6 @@
   }
 }
 </script>
-
-
 </head>
 
 <body>
